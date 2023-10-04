@@ -1,0 +1,22 @@
+@media (min-width:1325px) {
+    .search-o{
+        width: 600px;
+    }
+}
+@media screen and (max-width:768px){
+    .dropdown-list{
+        max-height: 150px;
+        overflow-y: auto;
+    }
+}
+@media screen and (max-width:991px){
+    .bg-black-color{
+        background-color: black;
+    }
+}
+.btn-1:focus{
+    border-color: #FFFF;
+}
+.Amazon-Home-Page{
+    background-image: url(images/);
+}
