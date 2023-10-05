@@ -17,3 +17,11 @@
 .btn-1:focus{
     border-color: #FFFF;
 }
+.car-s{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35vh;
+    z-index: -1;
+}
