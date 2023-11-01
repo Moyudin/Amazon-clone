@@ -1,3 +1,9 @@
+body{
+    background-color: #E3E6E6;
+}
+.str{
+    background-color: #E3E6E6;
+}
 @media (min-width:1325px) {
     .search-o{
         width: 600px;
@@ -13,18 +19,48 @@
     .bg-black-color{
         background-color: black;
     }
+    #mb{
+        text-align: center;
+    }
 }
-.btn-1:focus{
+@media screen and (min-width:991px){
+    .car-s{
+    height: 45vh;
+}
+
+.link-c{
+    color: #007185;
+}
+.btn1:hover{
     border-color: #FFFF;
 }
-.car-s{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 35vh;
-    z-index: -1;
 }
-.hell{
-
+ .btn1::after{
+    border-bottom: white;
+}
+ .card {
+    flex: 0 0 auto;
+} 
+.decoration{
+    text-decoration: none;
+}
+.decoration:hover{
+    color:#C95929;
+    text-decoration: underline;
+}
+.h250{
+    height: 150px;
+}
+.H{
+    background-color:#37475A;
+}
+.H:hover{
+    background-color:#485769;
+}
+.wh{
+    text-decoration: none;
+    color: white;
+}
+.wh:hover{
+    text-decoration: underline whitesmoke;
 }
