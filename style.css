@@ -1,9 +1,5 @@
 body{
     background-color: #E3E6E6;
-<<<<<<< HEAD
-    border: none;
-=======
->>>>>>> 338ee9ad473680070208c1689e188576f9f39e1d
 }
 .str{
     background-color: #E3E6E6;
@@ -26,7 +22,6 @@ body{
     #mb{
         text-align: center;
     }
-<<<<<<< HEAD
     #car-s{
         height: 40vh;
     }
@@ -73,28 +68,10 @@ body{
     #w8{
         width: 72%;
     }
-=======
-}
-@media screen and (min-width:991px){
-    .car-s{
-    height: 45vh;
-}
-
-.link-c{
-    color: #007185;
-}
-.btn1:hover{
-    border-color: #FFFF;
-}
-}
- .btn1::after{
-    border-bottom: white;
->>>>>>> 338ee9ad473680070208c1689e188576f9f39e1d
 }
  .card {
     flex: 0 0 auto;
 } 
-<<<<<<< HEAD
 .non-decoration{
     text-decoration: none;
     color: black;
@@ -103,8 +80,6 @@ body{
     color:#C95929;
     text-decoration: underline;
 }
-=======
->>>>>>> 338ee9ad473680070208c1689e188576f9f39e1d
 .decoration{
     text-decoration: none;
 }
@@ -127,8 +102,4 @@ body{
 }
 .wh:hover{
     text-decoration: underline whitesmoke;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 338ee9ad473680070208c1689e188576f9f39e1d
