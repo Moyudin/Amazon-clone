@@ -1,3 +1,10 @@
+body{
+    background-color: #E3E6E6;
+    border: none;
+}
+.str{
+    background-color: #E3E6E6;
+}
 @media (min-width:1325px) {
     .search-o{
         width: 600px;
@@ -13,18 +20,87 @@
     .bg-black-color{
         background-color: black;
     }
+    #mb{
+        text-align: center;
+    }
+    #car-s{
+        height: 40vh;
+    }
 }
-.btn-1:focus{
-    border-color: #FFFF;
+@media screen and (min-width:270px) and (max-width:448px){
+    #car-s{
+        height: 13vh;
+    }
 }
-.car-s{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 35vh;
-    z-index: -1;
+@media screen and (min-width:991px){
+    #car-s{
+        height: 45vh;
+    }
+    .link-c{
+        color: #007185;
+    }
+    .btn1:hover{
+        border-color: #FFFF;
+    }
+    .dropdown-c{
+        width: 350px;
+    }
 }
-.hell{
-
+.a-off:hover{
+    background-color: #EAEDED;
+} 
+@media screen and (min-width:1300px) and (max-width:1413px){
+    .w9{
+    font-size: 90%;
+    }
+}
+@media screen and (min-width:1255px) and (max-width:1343px){
+    .w9{
+    font-size: 80%;
+    }
+    #w8{
+        width: 80%;
+    }
+}
+@media screen and (min-width:1154px) and (max-width:1254px){
+    .w9{
+    font-size: 66%;
+    }
+    #w8{
+        width: 72%;
+    }
+}
+ .card {
+    flex: 0 0 auto;
+} 
+.non-decoration{
+    text-decoration: none;
+    color: black;
+}
+.non-decoration:hover{
+    color:#C95929;
+    text-decoration: underline;
+}
+.decoration{
+    text-decoration: none;
+}
+.decoration:hover{
+    color:#C95929;
+    text-decoration: underline;
+}
+.h250{
+    height: 150px;
+}
+.H{
+    background-color:#37475A;
+}
+.H:hover{
+    background-color:#485769;
+}
+.wh{
+    text-decoration: none;
+    color: white;
+}
+.wh:hover{
+    text-decoration: underline whitesmoke;
 }

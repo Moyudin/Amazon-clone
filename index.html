@@ -10,14 +10,19 @@
 </head>
 <body>
 
-  <section class="navbars ">
-    <section class="navbar-1">
-      <nav class="navbar navbar-expand-lg " style="background-color: #131921;">
-        <div class="container-fluid">
-          <div class="d-inline-flex m-1">
-            <a class="navbar-brand btn text-white" href="#"><img src="images/Amazon_logo.jpg" class="img-fluid"></a>
-            <button class="d-inline-flex btn text-white text-start" style="width:190px;background-color: #131921;"><img src="images/location_logo.jpg"><b><span class="text-white d-block" style="font-size: 10px;">Hello</span><span class="text-white" style="font-size:11px;">Select Your Address</span></b></button>
-          </div>
+  <section class="navbar-1 sticky-lg-top ">
+    <nav class="navbar navbar-expand-lg " style="background-color: #131921;">
+      <div class="container-fluid">
+        <div class="d-inline-flex m-1 ">
+          <button class="btn btn1 text-white" href="#"><img src="images/logo/Amazon_logo.jpg" class="img-fluid"></button>
+        </div>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <div>
+            <button class="d-inline-flex btn btn1 text-white text-start img-fluid" style="width:190px;background-color: #131921;"><img src="images/logo/location_logo.jpg" class="img-fluid"><b><span class="text-white d-block" style="font-size: 11px;">Hello</span><span class="text-white" style="font-size:11px;">Select Your Address</span></b></button>
+          </div><hr class="visible-hr" style="color: white;">
           <div class="d-inline-flex m-1">
             <button class=" nav-item dropdown" style="background-color:#D4D4D4;"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">All</a>
               <ul class="dropdown-menu dropdown-menu-scrollable"  style="max-height:200px;overflow-y: auto;background-color: #D4D4D4;">
@@ -64,77 +69,151 @@
                 <li><a class="dropdown-item" href="#">Watches</a></li>
               </ul>
             </button>
-            <form class="d-flex " role="search">
+            <form class="d-flex" role="search">
               <input class="search-o form-control " type="search" placeholder="Search Amazon.in" aria-label="Search">
-              <button class="btn" style="background-color: #FEBD69;" type="submit"><img height="25px" src="images/search_logo.jpg"></button>
+              <button class="btn" style="background-color: #FEBD69;" type="submit"><img height="25px" src="images/logo/search_logo.jpg"></button>
             </form>
+          </div><hr class="visible-hr" style="color: white;">
+          <ul class="navbar-nav m-1" >
+            <li class="nav-item dropdown" >
+              <button class="btn mt-2 btn1 dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/logo/ind_logo.jpg">IN
+              </button>
+              <ul class="dropdown-menu dropdown-menu-scrollable " style="max-height:200px;overflow-y: auto;background-color: white;">
+                <li><a class="dropdown-item active " href="#"><input type="radio" id="english" checked>&nbsp;&nbsp;<label for="english">English - EN</label></a></li><hr>
+                <li><a class="dropdown-item" href="#"><input type="radio" id="hindi">&nbsp;&nbsp;<label for="hindi">हिंदी - HI</label><a</li>
+                <li><a class="dropdown-item" href="#"><input type="radio" id="tamil">&nbsp;&nbsp;<label for="tamil">தமிழ் - TA</label></a></li>
+                <li><a class="dropdown-item" href="#"><input type="radio" id="telugu">&nbsp;&nbsp;<label for="telugu">తెలుగు - TE</label></a></li>
+                <li><a class="dropdown-item" href="#"><input type="radio" id="kanada">&nbsp;&nbsp;<label for="kanada">ಕನ್ನಡ - KA</label></a></li>
+                <li><a class="dropdown-item" href="#"><input type="radio" id="malayalum">&nbsp;&nbsp;<label for="malyalum">മലയാളം - ML</label></a></li>
+                <li><a class="dropdown-item" href="#"><input type="radio" id="bangla">&nbsp;&nbsp;<label for="bangla">বাংলা - BN</label></a></li>
+                <li><a class="dropdown-item" href="#"><input type="radio" id="marathi">&nbsp;&nbsp;<label for="marathi">मराठी - MR</label></a></li>
+                <div class="text-center">
+                  <a href="#">Learn More</a>
+                </div><hr>
+                <div class="d-inline-flex" style="font-size: 11px;">
+                  <img src="images/logo/ind_logo2.jpg" class="img-fluid">You Are Shopping on Amazon.in
+                </div>
+              </ul>
+            </li><hr class="visible-hr" style="color: white;">
+            <li class="nav-item dropdown">
+              <button class="btn btn1 dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <b class="text-white" style="font-size: 11px;">Hello Sign in,<br>Accounts & List</b>
+              </button>
+              <ul class="dropdown-menu  dropdown-c dropdown-list" id="drop-list"  style="max-height:200px;overflow-y:auto;background-color: white;">
+                <ul class="text-center">
+                  <button class="btn rounded-pill" style="background-color:rgb(255, 187, 0);">Sign IN</button><br>
+                  <p style="font-size: smaller;">New customer? <a href="#" class="decoration">Start here.</a></p>
+                </ul><hr>
+                <div class="row">
+                  <ul class="list-unstyled col-lg-6">
+                    <li class="fw-bold fs-6">Your Lists</li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Create a Wish List</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Wish from Any Website</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Baby Wishlist</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Discover Your Style</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Explore Showroom</a></li>                           
+                  </ul>
+                  <ul class="list-unstyled col-lg-6">
+                    <li class="fw-bold fs-6">Your Account</li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Account
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Orders</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Wish List</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Recommendations</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Wallet</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Prime Membership</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Prime Video</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Subscribe & Save Items</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Memberships & Subscriptions</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Seller Account</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Manage Your Content and Devices</a></li>
+                    <li><a href="#" class="non-decoration" style="font-size: small;">Your Free Amazon Business Account</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </li><hr class="visible-hr" style="color: white;">
+            <li class="nav-item ">
+              <button class="btn btn1 text-white" style="font-size:15px;"><span class="d-block fw-bold">Returns</span><span class="fw-bold">& Orders</span></button>
+            </li><hr class="visible-hr" style="color: white;">
+            <li class="nav-item mt-2">
+              <button class="btn btn1 text-white text-center"><img class="img-fluid" src="images/logo/Cart_logo.png" alt="cart-logo">Cart</button>          
+            </li><hr class="visible-hr" style="color: white;">
+          </ul>
+        </div> 
+      </div>
+    </nav>
+  </section>
+
+  <section class="navbar-2 d-lg-flex" style="background-color: #232F3E;">
+    <nav class="navbar nav-tabs">
+      <div class="container-fluid">
+        <a class="navbar-brand btn btn1 " style="background-color: #232F3E;" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <img src="images/logo/all_logo.jpg" alt="all_logo" class="img-fluid">
+        </a>
+        <div class="offcanvas offcanvas-start overflow-scroll" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header sticky-top" style="background-color: #232F3E;">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="images/logo/hello_sign.jpg" alt="hello-logo" class="img-fluid"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-          </button>
-          <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav m-1" >
-              <li class="nav-item dropdown" >
-                <button class="btn mt-2 dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="images/ind_logo.jpg">IN
-                </button>
-                <ul class="dropdown-menu dropdown-menu-scrollable " style="max-height:80px;overflow-y: auto;background-color: white;">
-                  <li><a class="dropdown-item active " href="#"><input type="radio" id="english" checked>&nbsp;&nbsp;<label for="english">English - EN</label></a></li><hr>
-                  <li><a class="dropdown-item" href="#"><input type="radio" id="hindi">&nbsp;&nbsp;<label for="hindi">हिंदी - HI</label><a</li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" id="tamil">&nbsp;&nbsp;<label for="tamil">தமிழ் - TA</label></a></li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" id="telugu">&nbsp;&nbsp;<label for="telugu">తెలుగు - TE</label></a></li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" id="kanada">&nbsp;&nbsp;<label for="kanada">ಕನ್ನಡ - KA</label></a></li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" id="malayalum">&nbsp;&nbsp;<label for="malyalum">മലയാളം - ML</label></a></li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" id="bangla">&nbsp;&nbsp;<label for="bangla">বাংলা - BN</label></a></li>
-                  <li><a class="dropdown-item" href="#"><input type="radio" id="marathi">&nbsp;&nbsp;<label for="marathi">मराठी - MR</label></a></li>
-                  <div class="text-center">
-                    <a href="#">Learn More</a>
-                  </div><hr>
-                  <div class="d-inline-flex" style="font-size: 10px;">
-                    <img src="images/ind_logo2.jpg" class="img-fluid">You Are Shopping on Amazon.in
-                  </div>
-                </ul>
-              </li><hr class="visible-hr" style="color: white;">
-              <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <b class="text-white" style="font-size: 10px;">Hello Sign in,<br>Accounts & List</b>
-                </button>
-                <ul class="dropdown-menu dropdown-list"  style="max-width:80px;overflow-y: auto;background-color: white;">
-                  <ul class="text-center">
-                    <button class="btn rounded-pill" style="background-color:rgb(255, 187, 0);">Sign IN</button>
-                  </ul><hr>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>                             
-                </ul>
-              </li><hr class="visible-hr" style="color: white;">
-              <li class="nav-item ">
-                <button class="btn text-white" style="font-size:15px;"><span class="d-block fw-bold">Returns</span><span class="fw-bold">& Orders</span></button>
-              </li><hr class="visible-hr" style="color: white;">
-              <li class="nav-item mt-2">
-                <button class="btn text-white text-center"><img class="img-fluid" src="images/Cart_logo.png">Cart</button>          
-              </li><hr class="visible-hr" style="color: white;">
+          <div class="offset-1 mt-2">
+            <h5 class="fw-bold">Trending</h5>
+            <ul class="list-unstyled">
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Best Sellers</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">New Releases</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Movers and Shakers</a></li>
             </ul>
-          </div> 
+          </div>
+          <hr>
+          <div class="offset-1 mt-2">
+            <h5 class="fw-bold">Digital Content And Devices</h5>
+            <ul class="list-unstyled">
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Echo & Alexa</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Fire TV</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Kindle E-Readers & eBooks</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Audible Audiobooks</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Amazon Prime Video</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Amazon Prime Music</a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="offset-1 mt-2">
+            <h5 class="fw-bold">Shop By Category</h5>
+            <ul class="list-unstyled">
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Mobile, Computers</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">TV, Appliances, Electronics</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Men's Fashion</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Women's Fashion</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">See ALL</a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="offset-1 mt-2">
+            <h5 class="fw-bold">Program & Features</h5>
+            <ul class="list-unstyled">
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Amazon Pay</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Gift Cards & Mobile Recharges</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Amazon Launchpad</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Handloom and Handicrafts</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">See ALL</a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="offset-1 mt-2">
+            <h5 class="fw-bold">Help & Settings</h5>
+            <ul class="list-unstyled">
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Your Account</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Customer Service</a></li>
+              <li class="a-off"><a href="#" class="text-decoration-none text-black">Sign in</a></li>
+            </ul>
+          </div>                
         </div>
-      </nav>
-    </section>
-    <section class="navbar-2">
-      <nav class="navbar nav nav-tabs navbar-expand-lg " style="background-color: #232F3E;">
-        <div class="container-fluid">
-          <a class="btn navbar-brand text-white" href="#"><img src="images/all_logo.jpg"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navabarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-expand-lg">
+          <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navabarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navabarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
+            <ul class="navbar-nav w9">
+              <li class="nav-item">
                 <small><a class="nav-link text-white" aria-current="page" href="#">Amazon miniTV</a></small>
               </li>
               <li class="nav-item">
@@ -153,9 +232,9 @@
                 <small><a class="nav-link text-white" href="#">Customer Service</a></small>
               </li>
               <div class="dropdown">
-                <button class="btn text-white dropdown-toggle" style="background-color: #232F3E;" type="button" data-bs-toggle="dropdown" aria-expanded="false">Prime</button>
-                <ul class="dropdown-menu">
-                  <li><a href="#"><img class="img-fluid" src="images/prime_img.jpg"></a></li>
+                <button class="btn btn1 text-white w9 dropdown-toggle" style="background-color: #232F3E;" type="button" data-bs-toggle="dropdown" aria-expanded="false">Prime</button>
+                <ul class="dropdown-menu ">
+                  <li><a href="#"><img class="img-fluid" src="images/OFFER/prime_img.jpg"></a></li>
                 </ul>
               </div>
               <li class="nav-item">
@@ -172,32 +251,18 @@
               </li>
             </ul>
             <ul class="nav ms-auto">
-              <li class="nav-item">
-                <small><img class="nav-link img-fluid" src="images/festival_logo.png"></small>
+              <li class="nav-item" id="w8">
+                <small><img class="nav-link img-fluid" src="images/logo/festival_logo.png" alt="festival-img"></small>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    </section>
+      </div>  
+    </nav>
   </section>
 
   <section class="Amazon-Home-Page">
     <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" >
-      <div class="carousel-inner car-s">
-        <div class="carousel-item active">
-          <img src="images/offer1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/offer2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/offer3.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/offer4.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -206,53 +271,1062 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-      <div class="container">
-        <div class="row ">
-          <div class="col-md-3 mb-2 d-md-flex bg-white">
-            <div class="card-border text-center shadow">
-              <h5>Up to 75% off | Headphones</h5>
+      <div class="carousel-inner" id="car-s">
+        <div class="carousel-item active">
+          <img src="images/OFFER/offer1.jpg" class="d-block w-100" alt="offer-1-img">
+        </div>
+        <div class="carousel-item">
+          <img src="images/OFFER/offer2.jpg" class="d-block w-100" alt="offer-img-2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/OFFER/offer3.jpg" class="d-block w-100" alt="offer-img-3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/OFFER/offer4.jpg" class="d-block w-100" alt="offer-img-4">
+        </div>
+        <div class="carousel-item">
+          <img src="images/OFFER/offer5.jpg" class="d-block w-100" alt="offer-img-5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-second-row str" >
+    <div class="container-fluid str">
+      <div class="row str">
+        <div class="col-md-3 mb-2 d-md-flex mt-1 str gap-0">
+          <div class="card-border bg-white m-1 p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Deals on TVs to match every room size.</h5>
               <div class="d-inline-flex gap-1">
                 <div class="d-block">
-                  <img src="images/Headphones_1.jpg" class="img-fluid">
-                  <p style="font-size: 10px;">Up to 75% off | boAt</p>
+                  <a href="#"><img src="images/products/TV/32inch.jpg" alt="32inch-TV" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Budget TVs | Up to 60% off</p>
                 </div>
                 <div>
-                  <img src="images/Headphones_2.jpg" class="img-fluid">
-                  <p style="font-size: 10px;">Up to 75% off | boult</p>
+                  <a href="#"><img src="images/products/TV/43inch.jpg" alt="43inch-TV" class="img-fluid"></a>
+                  <p style="font-size: 11px;">4k TVs | Up to 12 months No Cost EMI</p>
                 </div>
               </div>
               <div class="d-inline-flex gap-1">
                 <div class="">
-                  <img src="images/Headphones_3.jpg" class="img-fluid">
-                  <p style="font-size: 10px;">Up to 75% off | Noise</p>
+                  <a href="#"><img src="images/products/TV/55inch.jpg" alt="55inch-TV" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Big Screens | Up to 3 years warranty</p>
                 </div>
                 <div>
-                  <img src="images/Headphones_4.jpg" class="img-fluid">
-                  <p style="font-size: 10px;">Up to 75% off | Zebronics</p>
+                  <a href="#"><img src="images/products/TV/65inch.jpg" alt="65inch-TV" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Ultra Premium Tvs | Up to 50% off</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-3 mb-2 d-md-flex bg-white">
-            <div class="card-border m-1 shadow">
-              
+            <div>
+              <a class="decoration link-c m-3 pt-1" href="#"><small >See all offers</small></a>
             </div>
           </div>
-          <div class="col-md-3 mb-2 d-md-flex bg-white">
-            <div class="card-border m-1 shadow ">
-             
+        </div>
+        <div class="col-md-3 mb-2 d-md-flex str mt-1">
+          <div class="card-border bg-white m-1 p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Starting ₹199 | Shoes & handbags.</h5>
+              <div class="d-inline-flex gap-1 mt-3">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Shoes/SportsShoes.jpg" alt="Sports-shoes-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Sports Shoes</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Shoes/MensShoes.jpg" alt="Mens-shoes-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Men's Shoes</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="">
+                  <a href="#"><img src="images/products/Shoes/WomensShoes.jpg" alt="Wommen-shoes-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Women's shoes</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Shoes/handloom.jpg" alt="Handloom-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Handbags</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 mt-lg-5">
+              <a class="decoration link-c m-2 pt-5" href="#"><small class="decoration">See all offers</small></a>
             </div>
           </div>
-          <div class="col-md-3 mb-2 d-md-flex bg-white">
-            <div class="card-border m-1 shadow">
-              
+        </div>      
+        <div class="col-md-3 mb-2 d-md-flex str mt-1">
+          <div class="card-border m-1 shadow bg-white">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Up to 80% off | Laptops, smartwatches & headphones</h5>
+              <div class="">
+                <a href="#"><img src="images/OFFER/TVs_LAPTOP.jpg" class="img-fluid" alt="TVs-Laptop-img"></a>
+              </div>
+            </div>
+            <div class="mt-4 mt-lg-5">
+              <a class="decoration link-c m-2 pb-5 pt-5" href="#"><small class="decoration">See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 d-md-flex mt-1 str">
+          <div class="h250 m-1 shadow bg-white">    
+            <div class="text-center">
+              <h5 class="fw-bold pt-3 m-2">Sign in for your best experience</h5>
+              <button class="mt-2 mb-5 btn text-center rounded w-75" style="background-color: #FFD814;">Sign in securely</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
+
+  <section class="Amazon-Third-row str">
+    <div class="container-fluid str">
+      <div class="row str">
+        <div class="col-md-3 mb-2 d-md-flex str mt-lg-2">
+          <div class="card-border m-1 bg-white p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Up to 60% off | Top offers on home appliances</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Home_Appliances/Refrigerator1.jpg" alt="Refrigerator-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Refrigerators | Up to 60% off</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Home_Appliances/Washing-Machine.jpg" alt="Washing-Machine-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Washing machines | Up to 65% off</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="">
+                  <a href="#"><img src="images/products/Home_Appliances/AC.jpg" alt="AC-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">AC | Staring 19,999</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Home_Appliances/Microwave.jpg" alt="Microwave-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Microwaves | Up to 60% off</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 str d-md-flex  mt-lg-2">
+          <div class="card-border str bg-white m-1 p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold pt-2">Great Indian Festival | Extra Happiness Days</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/Coupon/Coupon1.jpg" alt="Coupon-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Save extra up to 40%</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/Coupon/Coupon2.jpg" alt="Coupon-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Up to 60% off on everything </p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/Coupon/Coupon3.jpg" alt="Coupon-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Exchange discount upto ₹50,000</p>
+                </div>
+                <div class="">
+                  <a href="#"><img src="images/Coupon/Coupon4.jpg" alt="Coupon-img3" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Mobiles,appliances,electronics</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 str d-md-flex mt-lg-2">
+          <div class="card-border bg-white m-1 p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Deals on smartphone that suits your budget</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Mobiles/Mobile1.jpg" alt="Mobile-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Budget | Under ₹10000</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Mobiles/Mobile2.jpg" alt="Mobile-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Mid range | ₹10000 - ₹25000</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="">
+                  <a href="#"><img src="images/products/Mobiles/Mobile3.jpg" alt="Mobile-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Premium | ₹25000 - ₹40000</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Mobiles/Mobile4.jpg" alt="Mobile-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Ultra premium | Above ₹40000</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 d-md-flex str mt-lg-2">
+          <div class="card-border m-1 bg-white p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Great Indian Festival | Shop all deals</h5>
+              <div class="">
+                <a href="#"><img src="images/OFFER/All-Deals.jpg" class="img-fluid" alt="TVs-Laptop-img"></a>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Blockbuster-deal str mt-2">
+    <div class="container-fluid str">
+      <div class="row str m-md-1">
+        <div class="col-12 bg-white">
+          <div class="d-inline-flex bg-white gap-3 mt-2">
+            <h5>Blockbuster deals</h5> 
+            <a class="decoration link-c" href="#">See all deals</a>
+          </div>
+          <div class="d-flex gap-1 overflow-x-auto mt-2">
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/watches/smartwatch1.jpg" class="mt-1 card-img-top img-fluid w-50" alt="smart-watch">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">Up to 89% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black">Smartwatches from Rs.899</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Mobiles/Mobile5.jpg" class="mt-1 card-img-top img-fluid w-50" alt="Mobile-phone-img">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">Up to 33% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black">Samsung Galaxy M14</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/earbuds-earpod/earbud1.jpg" class="mt-1 card-img-top img-fluid w-50" alt="earpod">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">Up to 81% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black">Top Headsets from Oneplus</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Mobiles/mobile6.jpg" class="mt-1 card-img-top img-fluid w-50" alt="mobile-phone">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">Up to 25% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black">Samsung Galaxy S23 FE 5G</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Home_Appliances/sofa.jpg" class="mt-4 card-img-top img-fluid w-50" alt="sofa-img">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">Up to 65% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black">Sofas, Recliners & more</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Mobiles/Mobile7.jpg" class="mt-1 card-img-top img-fluid w-50" alt="mobile-img">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">27% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black"><ins class="text-decoration-none fw-bold">₹7,999</ins>&nbsp;M.R.P&nbsp;<del>₹10,000</del></p>  
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Trending-deal str mt-2 mt-lg-3">
+    <div class="container-fluid str">
+      <div class="row str m-md-1">
+        <div class="col-12 bg-white">
+          <div class="d-inline-flex bg-white gap-3 mt-2">
+            <h5 class="fw-bold">Trending deals</h5> 
+            <a class="decoration link-c" href="#">See all deals</a>
+          </div>
+          <div class="d-flex gap-1 overflow-x-auto mt-2">
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Bedroom/Lexton.jpg" class="mt-3 card-img-top img-fluid w-50" alt="smart-watch">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">89% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black"><b>₹79.00 </b><small>M.R.P.:<del>₹699</del></small></p>
+                  </div>
+                  <p class="text-black ">Exiting Offers on Lexton String Light</p>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Bedroom/Bedsheets1.jpg" class="mt-3 card-img-top img-fluid w-50" alt="BedSheets-img">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1 ">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">₹199</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black">Best of BSB Homesheets</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Shoes/shoe-bag.jpg" class="mt-2 card-img-top img-fluid w-50" alt="shoe-bag-img">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">85% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black"><b>₹99.00 </b><small>M.R.P.:<del>₹649.00</del></small></p>
+                  </div>
+                  <p class="text-black">Cockatoo Shoe Bag for Travel & Storage</p>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Bedroom/Softspun.jpg" class="mt-1 card-img-top img-fluid w-50" alt="softspun-img">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">61% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black"><b>₹238.00 </b><small>M.R.P.:<del>₹604.00</del></small></p>
+                  </div>
+                  <p class="text-black">SOFTSPUN Microfiber Cloth</p>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0" style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Bedroom/clock.jpg" class="mt-4 card-img-top img-fluid w-50" alt="clock-img">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1 mt-3">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">21% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black"><b>₹389.00 </b><small>M.R.P.: <del>₹490.00</del></small></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card text-center border-0 " style="width: 18rem;">
+              <a href="#" class="text-decoration-none">
+                <img src="images/products/Home_Appliances/bottle.jpg" class="mt-1 card-img-top img-fluid w-50" alt="mobile-img">
+                <div class="card-body">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-danger btn-sm w-50 h-25 ">78% off</button>
+                    <h6 class="text-danger mt-lg-1">Great Indian Festival</h6>
+                  </div><br>
+                  <div class="d-inline-flex gap-1">
+                    <p class="text-black"><ins class="text-decoration-none"><b>₹99.00</b></ins>&nbsp;M.R.P&nbsp;<del>₹499.00</del></p>  
+                  </div>
+                  <p class="text-black">Cockatoo CS-01 Shaker Bottle</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-BestSelling-SmartWatches str mt-2 mt-lg-3">
+    <div class="container-fluid str">
+      <div class="row str m-md-1">
+        <div class="col-12 bg-white">
+          <div class="d-md-inline-flex bg-white gap-3 mt-2 img-fluid">
+            <h5 class="fw-bold">Starting ₹799 | Bestselling smartwatches from top brands</h5> 
+            <a class="decoration link-c" href="#">See all deals</a>
+          </div>
+          <div class="d-flex overflow-x-auto gap-2 mt-2">
+            <a href="#">
+              <img src="images/products/watches/smartwatch2.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch3.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch4.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch5.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch6.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch7.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch8.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch9.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch10.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch11.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch12.jpg" alt="smart-watch-img">
+            </a>
+            <a href="#">
+              <img src="images/products/watches/smartwatch13.jpg" alt="smart-watch-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Fourth-row str mt-2">
+    <div class="container-fluid  str">
+      <div class="row str">
+        <div class="col-md-3 mb-2 d-md-flex str mt-lg-2">
+          <div class="card-border m-1 bg-white p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Up to 70% off | Bring home something new</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Home_Appliances/Appliances.jpg" alt="Appliances-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Appliances</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/vehicles/Electric-vehicles.jpg" alt="Electric-vehicle-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Electtric vehicles</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="">
+                  <a href="#"><img src="images/products/Electric-items/Inverter-batteries.jpg" alt="Inverter-batteries" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Inverter batteries</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/vehicles/cycle1.jpg" alt="Cycle-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Cycles</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 str d-md-flex  mt-lg-2">
+          <div class="card-border str bg-white m-1 p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold pt-2">Starting ₹199 | Fashion items & beauty</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Ladies-clothing/clothing1.jpg" alt="women-clothing-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Women's Clothing</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Ladies-clothing/ladies-footwear.jpg" alt="Ladies-footwear-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Footwear+Handbags</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Ladies-clothing/cosmitics1.jpg" alt="Cosmeticics-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Beauty</p>
+                </div>
+                <div class="">
+                  <a href="#"><img src="images/products/Ladies-clothing/Fashion-jewellery.jpg" alt="jewwlery-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Fashion</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 d-md-flex str mt-lg-2">
+          <div class="card-border m-1 bg-white p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Up to 70% off | International brands</h5>
+              <div class="">
+                <a href="#"><img src="images/OFFER/International-brand.jpg" class="img-fluid" alt="International-brands-img"></a>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 str d-md-flex mt-lg-2">
+          <div class="card-border bg-white m-1 p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Min. 60% off | Home, kitchen & furniture | Made for amazon</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Bedroom/bed.jpg" alt="bed-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Min.60% off | Furniture</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Bedroom/Home-decor.jpg" alt="decor-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Min.60% off | Home decor</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="">
+                  <a href="#"><img src="images/products/Home_Appliances/furnishing.jpg" alt="Furnishing-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Min.60% off | Home furnishing</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Home_Appliances/Kitchen-dinning.jpg" alt="Kitchen-dinning-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">min.60% off | Kitchen & doing</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Top-Offers-S str mt-2 mt-lg-3">
+    <div class="container-fluid str">
+      <div class="row str m-md-1">
+        <div class="col-12 bg-white">
+          <div class="d-md-inline-flex bg-white gap-3 mt-2 img-fluid">
+            <h5 class="fw-bold">Explore Top offers in Smartphones</h5> 
+            <a class="decoration link-c" href="#">See all deals</a>
+          </div>
+          <div class="d-flex overflow-x-auto gap-2 mt-2">
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer1.jpg" alt="offer-1-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer2jpg.jpg" alt="offer-2-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer3.jpg" alt="offer-3-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer4.jpg" alt="offer-4-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer5.jpg" alt="offer-5-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer6.jpg" alt="offer-6-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer7.jpg" alt="offer-7-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer8.jpg" alt="offer-8-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer9.jpg" alt="offer-9-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer10.jpg" alt="offer-10-img">
+            </a>
+            <a href="#">
+              <img src="images/OFFER/ON-PHONE/Offer11.jpg" alt="offer-11-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-flat-emi str mt-2 mt-lg-3">
+    <div class="container-fluid str">
+      <div class="row str m-md-1">
+        <div class="col-12 bg-white">
+          <img src="images/Amazon-flat-EMI/Train-img.jpg" class="img-fluid mt-3 mb-3" alt="train-emi-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-BestSelling-SmartWatches str mt-2 mt-lg-3">
+    <div class="container-fluid str">
+      <div class="row str m-md-1">
+        <div class="col-12 bg-white">
+          <div class="d-md-inline-flex bg-white gap-3 mt-2 img-fluid">
+            <h5 class="fw-bold">Starting ₹99 + 20% cashback on first order | Beauty & makeup</h5> 
+            <a class="decoration link-c" href="#">See all deals</a>
+          </div>
+          <div class="d-flex overflow-x-auto gap-5 mt-2">
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/Eye1.jpg" alt="eye-liner-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/FaceWash1.jpg" class="img-fluid" alt="fash-wash-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/FaceWash2.jpg" alt="fash-wash-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/Cosmetic1.jpg" alt="cosmetic-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/Cosmetic2.jpg" alt="cosmetic-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/Cosmetic3.jpg" alt="cosmetic-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/Cosmetic4.jpg" alt="cosmetic-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/FaceWash2.jpg" alt="face-wash-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/FaceWash3.jpg" alt="face-wash-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/Cosmetic5.jpg" alt="cosmetic-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/FaceWash4.jpg" alt="face-wash-img">
+            </a>
+            <a href="#">
+              <img src="images/products/cosmetics-skincare/Cosmetic6.jpg" alt="cosmetic-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Home-furnishing str mt-2 mt-lg-3">
+    <div class="container-fluid">
+      <div class="text-center">
+        <a href="#"><img src="images/Amazon-flat-EMI/Home-Furnishing.jpg" class="img-fluid" alt="Home-Furnihing-img"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Fifth-row str mt-2">
+    <div class="container-fluid  str">
+      <div class="row str">
+        <div class="col-md-3 mb-2 d-md-flex str mt-lg-2">
+          <div class="card-border m-1 bg-white p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-3">Starting ₹199 | Shoes, jewellery & more</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Shoes/SportsShoes.jpg" alt="Sports-shoes" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Sports Shoes</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Ladies-clothing/jewellery & Accesories.jpg" alt="Jewellery-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Jewellery & Accesories</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="">
+                  <a href="#"><img src="images/products/watches/watches-smartwatches.jpg" alt="watches-smartwatches" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Watches-Smartwatches</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/bags/bags-wallet.jpg" alt="Cycle-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Bags & wallet</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 str d-md-flex  mt-lg-2">
+          <div class="card-border str bg-white m-1 p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold pt-2">Up to 80% off | Computer accessories & storage devices</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Computer/Headphones.jpg" alt="headphone-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Up to 75% off | Gaming headphones</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Computer/Keyboard.jpg" alt="keyboard-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Up to 80% off | Keyboard and mouse</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Computer/Storage.jpg" alt="pendrive-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Up to 70% off | Storage devices</p>
+                </div>
+                <div class="">
+                  <a href="#"><img src="images/products/Computer/component.jpg" alt="PC-component-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Up to 60% off | PC components</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 d-md-flex str mt-lg-2">
+          <div class="card-border m-1 bg-white p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-2">Up to 40% off | Deals on mobiles & accessories</h5>
+              <div class="">
+                <a href="#"><img src="images/OFFER/Mobile-Accessories.jpg" class="img-fluid" alt="Mobile-Accesories-img"></a>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 str d-md-flex mt-lg-2">
+          <div class="card-border bg-white m-1 p-1 shadow ">
+            <div class="text-center">
+              <h5 class="fw-bold mt-2">Great Indian Festival | Brands in focus</h5>
+              <div class="d-inline-flex gap-1">
+                <div class="d-block">
+                  <a href="#"><img src="images/products/Mobiles/Mobile8.jpg" alt="mobile-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Staring ₹7,299 | realme narzo Smartphones </p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Chocolates-Gifting/choco1.jpg" alt="chocolate-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">Up to 30% off | Chocolate & Gifting</p>
+                </div>
+              </div>
+              <div class="d-inline-flex gap-1">
+                <div class="">
+                  <a href="#"><img src="images/products/Electric-items/Laptop1.jpg" alt="laptop-img" class="img-fluid "></a>
+                  <p style="font-size: 11px;">Up to 40% off | Bestselling Gaming Laptops</p>
+                </div>
+                <div>
+                  <a href="#"><img src="images/products/Chocolates-Gifting/choco2.jpg" alt="chocolate-img" class="img-fluid"></a>
+                  <p style="font-size: 11px;">min.60% off | Kitchen & doing</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="decoration link-c m-3" href="#"><small >See all offers</small></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Brands&-more str mt-2 mt-lg-3">
+    <div class="container-fluid str">
+      <div class="row str m-md-1">
+        <div class="col-12 bg-white">
+          <div class="d-md-inline-flex bg-white gap-3 mt-2 img-fluid">
+            <h5 class="fw-bold">Starting 399 | Neckbands & Earbuds | Amazon Brands & more</h5> 
+            <a class="decoration link-c" href="#">See all deals</a>
+          </div>
+          <div class="d-flex overflow-x-auto gap-2 mt-2">
+            <a href="#">
+              <img src="images/products/Necband-Earpod/neckband1.jpg" alt="neckband-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/neckband2.jpg" alt="neckband-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/earpod1.jpg" alt="earpod-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/neckband3.jpg" alt="neckband-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/neckband4.jpg" alt="neckband-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/earpod2.jpg" alt="earpod-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/earpod3.jpg" alt="earpod-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/neckband5.jpg" alt="neckband-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/earpod4.jpg" alt="earpod-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/earpod5.jpg" alt="earpod-img">
+            </a>
+            <a href="#">
+              <img src="images/products/Necband-Earpod/neckband6.jpg" alt="neckband-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Top-Offers-S str mt-2 mt-lg-3">
+    <div class="container-fluid str">
+      <div class="row str m-md-1">
+        <div class="col-12 bg-white">
+          <div class="d-md-inline-flex bg-white gap-3 mt-2 img-fluid">
+            <h5 class="fw-bold">Explore Top offers in Smartphones</h5> 
+            <a class="decoration link-c" href="#">See all deals</a>
+          </div>
+          <div class="d-flex overflow-x-auto gap-2 mt-2">
+            <a href="#">
+              <img src="images/Top-Catagories/Smartphones & accessories.jpg" alt="Smartphones-img">
+            </a>
+            <a href="#">
+              <img src="images/Top-Catagories/Electronics & accessories.jpg" alt="Electronics-img">
+            </a>
+            <a href="#">
+              <img src="images/Top-Catagories/home-kitchen.jpg" alt="Home-kitchen-img">
+            </a>
+            <a href="#">
+              <img src="images/Top-Catagories/TV-Appliances.jpg" alt="TV-Appliances-img">
+            </a>
+            <a href="#">
+              <img src="images/Top-Catagories/Fashion-Beauty.jpg" alt="fashion-beauty-img">
+            </a>
+            <a href="#">
+              <img src="images/Top-Catagories/Daily-Needs.jpg" alt="daily-needs-img">
+            </a>
+            <a href="#">
+              <img src="images/Top-Catagories/Books & Toys.jpg" alt="books-toys-img">
+            </a>
+            <a href="#">
+              <img src="images/Top-Catagories/Amazon-brands.jpg" alt="amazon-brands-img">
+            </a>
+            <a href="#">
+              <img src="images/Top-Catagories/Alexa & Fire TV.jpg" alt="alexa-tv-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Personalized-Recomadation mt-4 bg-white pb-2">
+    <div class="container-fluid">
+      <div class="row ">
+        <hr class="mt-5">
+        <div class="text-center">
+          <h6 style="font-size:small;">See personalized recommendations</h6>
+          <div class="justify-content-center">
+            <button class="btn rounded-3 img-fluid text-black btn-outline-warning fw-bold" style="background-color: #FFCC4D;width: 250px;height:35px">Sign in</button>
+          </div>
+          <h6 style="font-size: small;" class="mt-1">New customer?<a href="#" class="decoration text-decoration-none link-c"> Start here.</a></h6>
+        </div>
+        <hr class="mt-2">
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-Back-To-Top H">
+    <div class="row text-center text-white ">
+      <h6 style="font-size: small;" class="pt-3 pb-2">Back to top</h6>
+    </div>
+  </section>
+
+  <section class="Amazon-secondlast-footer pb-5" style="background-color: #232F3E;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2" id="mb">
+          <h6 style="font-size:18px;color: white;" class="mt-5">Get to Know Us</h6>
+          <a href="#" class="wh"><small> About us</small></a><br>
+          <a href="#" class="wh"><small>Careers</small></a><br>
+          <a href="#" class="wh"><small>Press Releases</small></a><br>
+          <a href="#" class="wh"><small>Amazon Science</small></a>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <h6 style="font-size:18px;color: white;" class="mt-5">Connect with Us</h6>
+          <a href="#" class="wh"><small>Facebook</small></a><br>
+          <a href="#" class="wh"><small>Twitter</small></a><br>
+          <a href="#" class="wh"><small>Instagram</small></a>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <h6 style="font-size:18px;color: white;" class="mt-5">Make Money with Us</h6>
+          <a href="#" class="wh"><small>Sell on Amazon</small></a><br>
+          <a href="#" class="wh"><small>Sell under Amazon Accelator</small></a><br>
+          <a href="#" class="wh"><small>Protect and Build Your Brand</small></a><br>
+          <a href="#" class="wh"><small>Amazon Global Selling</small></a><br>
+          <a href="#" class="wh"><small>Become an Affiliate</small></a><br>
+          <a href="#" class="wh"><small>Fulfilment by Amazon</small></a><br>
+          <a href="#" class="wh"><small>Advertise Your products</small></a><br>
+          <a href="#" class="wh"><small>Amazon Pay on Merchants</small></a>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <h6 style="font-size:18px;color: white;" class="mt-5">Let Us Help You</h6>
+          <a href="#" class="wh"><small>COVID-19 and Amazon</small></a><br>
+          <a href="#" class="wh"><small>Your Account</small></a><br>
+          <a href="#" class="wh"><small>Returns Centre</small></a><br>
+          <a href="#" class="wh"><small>100% Purchase Protection</small></a><br>
+          <a href="#" class="wh"><small>Amazon App Download</small></a><br>
+          <a href="#" class="wh"><small>Help</small></a>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-5 text-white">
+    <div class="container">
+      <div class="row pb-5">
+        <div class="d-inline-flex justify-content-center gap-5">
+          <img src="images/logo/Amazon-logo-end.png" alt="amazon-logo" class="img-fluid">
+          <button class="btn border mt-2 btn1 dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/logo/global-logo.png">English
+          </button>
+          <ul class="dropdown-menu dropdown-menu-scrollable " style="background-color: white;">
+            <li><a class="dropdown-item" href="#"><input type="radio" id="hindi">&nbsp;&nbsp;<label for="hindi">हिंदी - HI</label><a</li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="tamil">&nbsp;&nbsp;<label for="tamil">தமிழ் - TA</label></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="telugu">&nbsp;&nbsp;<label for="telugu">తెలుగు - TE</label></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="kanada">&nbsp;&nbsp;<label for="kanada">ಕನ್ನಡ - KA</label></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="malayalum">&nbsp;&nbsp;<label for="malyalum">മലയാളം - ML</label></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="bangla">&nbsp;&nbsp;<label for="bangla">বাংলা - BN</label></a></li>
+            <li><a class="dropdown-item" href="#"><input type="radio" id="marathi">&nbsp;&nbsp;<label for="marathi">मराठी - MR</label></a></li>
+            <div class="text-center">
+              <a href="#">Learn More</a>
+            </div><hr>
+            <div class="d-inline-flex" style="font-size: 11px;">
+              <img src="images/logo/ind_logo2.jpg" class="img-fluid">You Are Shopping on Amazon.in
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-9 text-center ">
+          <a href="#" class="wh"><small style="font-size: small;">Australia</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Brazil</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Canada</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">China</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">France</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Germany</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Italy</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Japan</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Mexico</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Netherlands</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Poland</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Singapore</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Spain</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">Turkey</small></a>&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">United Arab Emirates</small></a>&nbsp;&nbsp;<br>
+          <a href="#" class="wh"><small style="font-size: small;">United Kingdom</small></a>&nbsp;&nbsp;&nbsp;
+          <a href="#" class="wh"><small style="font-size: small;">United States</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Amazon-last-Footer pb-4" style="background-color: #131A22;">
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2" id="mb">
+          <a href="#" class="wh"><small class="fw-bold d-block" style="font-size:small;">AbeBooks</small><small class="d-block" style="font-size: small;">Books,art</small><small style="font-size: small;">& collection</small></a><br>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <a href="#" class="wh"><small class="fw-bold d-block" style="font-size: small;">Amazon Web Services</small><small class="d-block" style="font-size: small;">Scalable Cloud</small><small style="font-size: small;">Computing Services</small></a><br>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <a href="#" class="wh"><small class="fw-bold d-block" style="font-size: small;">Audible</small><small class="d-block" style="font-size: small;">Download</small><small style="font-size: small;">Audio Books</small></a><br>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <a href="#" class="wh"><small class="fw-bold d-block" style="font-size: small;">IMDb</small><small class="d-block" style="font-size: small;">Movies, TV</small><small style="font-size: small;">& Celebrities</small></a><br>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2" id="mb">
+          <a href="#" class="wh"><small class="fw-bold d-block" style="font-size:small;">Shopbop</small><small class="d-block" style="font-size: small;">Designer</small><small style="font-size: small;">Fashion Brands</small></a><br>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <a href="#" class="wh"><small class="fw-bold d-block" style="font-size: small;">Amazon Business</small><small class="d-block" style="font-size: small;">Everything For</small><small style="font-size: small;">Your Business</small></a><br>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <a href="#" class="wh"><small class="fw-bold d-block" style="font-size: small;">Prime Now</small><small class="d-block" style="font-size: small;">2-Hour Delivery</small><small style="font-size: small;">on Everyday Items</small></a><br>
+        </div>
+        <div class="col-lg-2" id="mb">
+          <a href="#" class="wh"><small class="fw-bold d-block" style="font-size: small;">Amazon Prime Music</small><small class="d-block" style="font-size: small;">100 million songs,ad-free</small><small style="font-size: small;">Over 15 million podcast epsiodes</small></a><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-inline-flex justify-content-center mt-5 gap-4">
+          <a href="#" class="wh" id="mb"><small class="fw-bold d-block" style="font-size: small;">Conditions of Use & Sale</small></a>
+          <a href="#" class="wh" id="mb"><small class="fw-bold d-block" style="font-size: small;">Privacy Notice</small></a>
+          <a href="#" class="wh" id="mb"><small class="fw-bold d-block" style="font-size: small;">Interest-Based Ads</small></a>
+        </div>
+      </div>
+      <div class="row pb-1">
+        <div class="text-center mt-1">
+          <small class="text-white" id="mb" style="font-size: small;">© 1996-2023, Amazon.com, Inc. or its affiliates</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <!-- Popper in JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
