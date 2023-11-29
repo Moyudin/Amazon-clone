@@ -47,8 +47,8 @@ body{
 }
 .a-off:hover{
     background-color: #EAEDED;
-} 
-@media screen and (min-width:1300px) and (max-width:1413px){
+}
+@media screen and (min-width:1300px) and (max-width:1443px){
     .w9{
     font-size: 90%;
     }
