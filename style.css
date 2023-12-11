@@ -8,6 +8,9 @@ body{
     .search-o{
         width: 600px;
     }
+    .tr{
+        width: 200px;
+    }
 }
 @media screen and (max-width:768px){
     .dropdown-list{
@@ -67,6 +70,9 @@ body{
     }
     #w8{
         width: 72%;
+    }
+    .tr{
+        width: 200px;
     }
 }
  .card {
